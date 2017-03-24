@@ -43,3 +43,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
     ports:
       - "3000:3000"
+  ethexplorer:
+    image: settlemint/ethexplorer
+    environment:
+      - WEB3_RPC=<your_rpc_address>  #http://abc.xyz.com:8545
+    ports:
+      - "8000:8000"
